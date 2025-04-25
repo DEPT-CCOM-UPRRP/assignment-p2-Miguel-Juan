@@ -8,17 +8,39 @@
 <body>
     <h1>Political Leaders</h1>
 
-    Filter Countries: 
-    <select id="country-selector">
-        <option value="oecd">OECD</option>
-        <option value="eu27">EU27</option>
-        <option value="brics">BRICS</option>
-        <option value="gseven">G7</option>
-        <option value="gtwenty">G20 (without EU)</option>
-    </select>
+    <div class="controls">
+        Filter Countries: 
+        <input type="text" id="country-filter" placeholder="Type to filter...">
+        <select id="country-selector">
+            <option value="oecd">OECD</option>
+            <option value="eu27">EU27</option>
+            <option value="brics">BRICS</option>
+            <option value="gseven">G7</option>
+            <option value="gtwenty">G20 (without EU)</option>
+        </select>
+    </div>
+
+    <div class="chart-container">
+        <h2>Age</h2>
+        <div id="lexis-chart"></div>
+    </div>
+
     
-    <!-- todo: add visualizations -->
-    
+        </div>
+        <div class="chart-container">
+            <h2>Age vs GDP per capita</h2>
+            <div id="scatter-plot"></div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Bar Chart</h2>
+        <div id="bar-chart"></div>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" style="position: absolute; visibility: hidden; background: #f9f9f9; border: 1px solid #ccc; padding: 5px; border-radius: 5px; font-size: 12px;"></div>
+
     <script src="js/d3.v6.min.js"></script>
     <script src="js/lexisChart.js"></script>
     <script src="js/barChart.js"></script>

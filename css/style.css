@@ -1,13 +1,47 @@
-/* Todo: add styles */
-.example-arrow-class {
-    /*
-     * The marker-end attribute changes the style of the class to have the
-     * corresponding style. By changing the class on the svg object and assigning
-     * each marker-end to a different class, you'll be able to change the arrow
-     * styles accordingly.
-     */
-    marker-end: url(#arrow-head);
-    marker-end: url(#arrow-head-hovered);
-    marker-end: url(#arrow-head-highlighted);
-    marker-end: url(#arrow-head-highlighted-selected);
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.chart-row .chart-container {
+  flex: 1;
+}
+
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
