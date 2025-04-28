@@ -33,6 +33,7 @@ h1 {
 
 .chart-row .chart-container {
   flex: 1;
+  max-width: 45%;
 }
 
 #tooltip {
